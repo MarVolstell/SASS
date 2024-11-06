@@ -1,0 +1,26 @@
+nav{
+    background-color:navBackground;
+    ul {
+        display: flex;
+        li {
+            padding: 5px;
+            flex-grow: 1;
+            list-style: none;
+            @media screen and (min-width:300) {
+                flex-direction: column;
+            }
+            a{
+                color:$navLink;
+                display: block;
+                background-color:$navItem;
+                padding: 5px;
+                text-decoration: none;
+                text-align: center;
+                @extend .button;
+                &:hover{
+                    background-color:$navItemHover;
+                }
+            }
+        }
+    }
+}
